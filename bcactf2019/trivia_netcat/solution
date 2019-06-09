@@ -1,0 +1,3 @@
+flag can be obtained by executing command given in description. 
+command :: nc challenges.ctfd.io 30126 
+flag :: bcactf{5urf1n_7h3_n37c47_c2VydmVyc2lkZQ}

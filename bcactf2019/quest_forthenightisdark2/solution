@@ -1,0 +1,24 @@
+stage 2 url :: 
+http://rhllor.xyz/5h0wu57ru7h4nDF4l53n355_TG9yZCBvZiBMaWdodCwgZ2l2ZSB1cyB3aXNkb20
+
+inspection gives stage2.js file containing md5 hash 3758002ab24653af8d550c0c50473098, 
+
+$("#target").submit(function( event ) {
+  var hash = md5($("#secret").val())
+  if (hash == "3758002ab24653af8d550c0c50473098") {
+  	var encode = "ÐßÏ½æ¦ ÐÞÙÖ©Ã»¤× ÃºªîÈ©¼×ÐÖËÕ§£¢Íç«ÖÉÌ±ÈÕÒßÊÕÅ"
+	var newstr = ""
+	var key = $("#secret").val()
+	for (var i = 0; i < encode.length; i++) {
+		newstr += String.fromCharCode(encode.charCodeAt(i) - key.charCodeAt(i%key.length))
+	}
+  	window.location = "/f" + newstr
+  }
+
+  $("#secret").val("")
+  event.preventDefault();
+});
+
+reversing md5 hashing for 3758002ab24653af8d550c0c50473098 gives "darknight".
+
+flag after submission :: bcactf{7h37ru7h15411w3h4v3_dGhlIGxpZ2h0IGluIG91ciBleWVz}

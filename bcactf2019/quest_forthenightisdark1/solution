@@ -1,0 +1,12 @@
+file starmap.bmp >> starmap.bmp: PC bitmap, Windows 3.x format, 63 x 63 x 24
+cat starmap.bmp >> BMv/6(??▒@/��QZu9GIwVGdzByb0BSZt92YsV2d_57ra3hru0n13rif3h7/zyx.rollhr//:ptth%   
+
+reversing this part :: QZu9GIwVGdzByb0BSZt92YsV2d_57ra3hru0n13rif3h7/zyx.rollhr//:ptth
+
+txt="QZu9GIwVGdzByb0BSZt92YsV2d_57ra3hru0n13rif3h7/zyx.rollhr//:ptth"[::-1]
+print(txt)
+
+gives :: http://rhllor.xyz/7h3fir31n0urh3ar75_d2VsY29tZSB0byBzdGVwIG9uZQ
+
+flag :: bcactf{gu1d3d_8y_574r5_QmVnaW5uaW5ncw}
+
